@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl font-bold text-center mt-20">Digital Clock</h1>
+     </header>
+     <main class="container mx-auto">
+        <section>
+            <div class="bg-gray-100 mt-20">
+                <div id="live-clock" class="text-center text-7xl font-bold text-blue-400 mb-4 mt-10 py-8">
+                    00:00:00
+                </div>
+                <div class="text-center space-x-19 pb-10 ">
+                    <button onclick="startClock()" class="bg-blue-500 w-24 md:w-36 lg:w- p-4 mx-4 rounded-lg text-xl font-semibold text-white" >Start</button>
+                    <button onclick="stopClock()" class="bg-blue-500 w-24 md:w-36 lg:w- p-4 mx-4 rounded-lg text-xl font-semibold text-white" >Stop</button>
+                    <button onclick="resetClock()" class="bg-blue-500 w-24 md:w-36 lg:w- p-4 mx-4 rounded-lg text-xl font-semibold text-white" >Reset</button>
+                </div>
+       </div>
+        </section>
+     </main>
+      <script src="/script.js"></script>
+</body>
+</html>
